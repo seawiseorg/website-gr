@@ -37,6 +37,7 @@
       {{ template "_internal/google_analytics_async.html" . }}
     {{ end }}
 	{{ block "head" . }}{{ partial "head-additions.html" . }}{{ end }}
+  <script defer data-domain="seawise.gr" src="https://plausible.io/js/plausible.js"></script>
   </head>
 
   <body class="ma0 {{ $.Param "body_classes"  | default "avenir bg-near-white"}}{{ with getenv "HUGO_ENV" }} {{ . }}{{ end }}">
